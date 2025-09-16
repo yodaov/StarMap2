@@ -1,0 +1,674 @@
+[
+  {
+    "id": "sys_001",
+    "name": "Sol",
+    "type": "Yellow Dwarf",
+    "position": { "x": "50%", "y": "50%" },
+    "star_data": [
+      {
+        "name": "Sun",
+        "type": "Yellow Dwarf",
+        "heat": 5778,
+        "size": 1.0
+      }
+    ],
+    "planets": [
+      {
+        "name": "Mercury",
+        "type": "Terrestrial Planet",
+        "size": 0.38,
+        "materials": ["Iron Core", "Silicate Rock"],
+        "fact": "A day on Mercury is longer than its year."
+      },
+      {
+        "name": "Venus",
+        "type": "Terrestrial Planet",
+        "size": 0.95,
+        "materials": ["Carbon Dioxide", "Sulfuric Acid", "Basalt"],
+        "fact": "Features a runaway greenhouse effect, making it the hottest planet in the system."
+      },
+      {
+        "name": "Earth",
+        "type": "Habitable Planet",
+        "size": 1.0,
+        "materials": ["Water", "Nitrogen", "Oxygen", "Silicon"],
+        "fact": "The only known celestial body to harbor complex life."
+      },
+      {
+        "name": "Mars",
+        "type": "Desert Planet",
+        "size": 0.53,
+        "materials": ["Iron Oxide", "Carbon Dioxide", "Rock"],
+        "fact": "Home to Olympus Mons, the largest volcano in the solar system."
+      }
+    ]
+  },
+  {
+    "id": "sys_002",
+    "name": "Aethelgard",
+    "type": "Red Dwarf",
+    "position": { "x": "48%", "y": "52%" },
+    "star_data": [
+      {
+        "name": "Aethel",
+        "type": "Red Dwarf",
+        "heat": 3200,
+        "size": 0.45
+      }
+    ],
+    "planets": [
+      {
+        "name": "Aethelgard-b",
+        "type": "Carbon Planet",
+        "size": 1.3,
+        "materials": ["Graphite", "Diamond", "Silicon Carbide"],
+        "fact": "It is theorized that a third of the planet's mass is pure diamond."
+      },
+      {
+        "name": "Aethelgard-c",
+        "type": "Ice Giant",
+        "size": 3.8,
+        "materials": ["Methane Ice", "Ammonia", "Water Ice"],
+        "fact": "Features cryovolcanoes that erupt with liquid water and ammonia."
+      }
+    ]
+  },
+  {
+    "id": "sys_003",
+    "name": "Cygnus X-1",
+    "type": "Black Hole",
+    "position": { "x": "10%", "y": "15%" },
+    "star_data": [
+      {
+        "name": "Cygnus X-1",
+        "type": "Black Hole",
+        "heat": 0,
+        "size": 21.2
+      }
+    ],
+    "planets": []
+  },
+  {
+    "id": "sys_004",
+    "name": "Sirius",
+    "type": "Binary System",
+    "position": { "x": "55%", "y": "45%" },
+    "star_data": [
+      {
+        "name": "Sirius A",
+        "type": "Blue Star",
+        "heat": 9940,
+        "size": 1.71
+      },
+      {
+        "name": "Sirius B",
+        "type": "White Dwarf",
+        "heat": 25000,
+        "size": 0.0084
+      }
+    ],
+    "planets": []
+  },
+  {
+    "id": "sys_005",
+    "name": "Kepler-186",
+    "type": "Red Dwarf",
+    "position": { "x": "60%", "y": "60%" },
+    "star_data": [
+      {
+        "name": "Kepler-186",
+        "type": "Red Dwarf",
+        "heat": 3755,
+        "size": 0.54
+      }
+    ],
+    "planets": [
+      {
+        "name": "Kepler-186f",
+        "type": "Habitable Planet",
+        "size": 1.17,
+        "materials": ["Water", "Silicates", "Iron"],
+        "fact": "The first Earth-sized planet discovered in the habitable zone of another star."
+      }
+    ]
+  },
+  {
+    "id": "sys_006",
+    "name": "Betelgeuse",
+    "type": "Red Supergiant",
+    "position": { "x": "80%", "y": "20%" },
+    "star_data": [
+      {
+        "name": "Betelgeuse",
+        "type": "Red Supergiant",
+        "heat": 3600,
+        "size": 887
+      }
+    ],
+    "planets": []
+  },
+  {
+    "id": "sys_007",
+    "name": "PSR B1257+12",
+    "type": "Neutron Star",
+    "position": { "x": "25%", "y": "75%" },
+    "star_data": [
+      {
+        "name": "Lich",
+        "type": "Neutron Star",
+        "heat": 600000,
+        "size": 0.000015
+      }
+    ],
+    "planets": []
+  },
+  {
+    "id": "sys_008",
+    "name": "Sagittarius A*",
+    "type": "Hypergiant",
+    "position": { "x": "95%", "y": "95%" },
+    "star_data": [
+      {
+        "name": "Sagittarius A*",
+        "type": "Hypergiant",
+        "heat": 20000,
+        "size": 4100000
+      }
+    ],
+    "planets": []
+  },
+  {
+    "id": "sys_009",
+    "name": "Kaelen's Rift",
+    "type": "Binary Black Holes",
+    "position": { "x": "5%", "y": "95%" },
+    "star_data": [
+      {
+        "name": "Kaelen Prime",
+        "type": "Black Hole",
+        "heat": 0,
+        "size": 35.5
+      },
+      {
+        "name": "Kaelen Secundus",
+        "type": "Black Hole",
+        "heat": 0,
+        "size": 28.2
+      }
+    ],
+    "planets": []
+  },
+  {
+    "id": "sys_010",
+    "name": "TRAPPIST-1",
+    "type": "Red Dwarf",
+    "position": { "x": "40%", "y": "40%" },
+    "star_data": [
+      {
+        "name": "TRAPPIST-1",
+        "type": "Red Dwarf",
+        "heat": 2566,
+        "size": 0.119
+      }
+    ],
+    "planets": [
+      {
+        "name": "TRAPPIST-1e",
+        "type": "Habitable Planet",
+        "size": 0.91,
+        "materials": ["Rock", "Water", "Iron"],
+        "fact": "Considered one of the most promising potentially habitable exoplanets."
+      },
+      {
+        "name": "TRAPPIST-1h",
+        "type": "Ice Planet",
+        "size": 0.77,
+        "materials": ["Water Ice", "Ammonia Ice"],
+        "fact": "The outermost and coldest planet in its system."
+      }
+    ]
+  },
+  {
+    "id": "sys_011",
+    "name": "Proxima Centauri",
+    "type": "Red Dwarf",
+    "position": { "x": "51%", "y": "49%" },
+    "star_data": [
+      {
+        "name": "Proxima Centauri",
+        "type": "Red Dwarf",
+        "heat": 3042,
+        "size": 0.154
+      }
+    ],
+    "planets": [
+      {
+        "name": "Proxima Centauri b",
+        "type": "Terrestrial Planet",
+        "size": 1.07,
+        "materials": ["Rock", "Iron"],
+        "fact": "The closest known exoplanet to the Solar System."
+      }
+    ]
+  },
+  {
+    "id": "sys_012",
+    "name": "Luyten's Star",
+    "type": "Red Dwarf",
+    "position": { "x": "45%", "y": "55%" },
+    "star_data": [
+      {
+        "name": "Luyten's Star",
+        "type": "Red Dwarf",
+        "heat": 3150,
+        "size": 0.29
+      }
+    ],
+    "planets": [
+      {
+        "name": "Luyten b",
+        "type": "Habitable Planet",
+        "size": 1.35,
+        "materials": ["Water", "Silicates"],
+        "fact": "A 'Super-Earth' located in its star's habitable zone."
+      }
+    ]
+  },
+  {
+    "id": "sys_013",
+    "name": "Vega",
+    "type": "Blue Star",
+    "position": { "x": "70%", "y": "30%" },
+    "star_data": [
+      {
+        "name": "Vega",
+        "type": "Blue Star",
+        "heat": 9600,
+        "size": 2.36
+      }
+    ],
+    "planets": []
+  },
+  {
+    "id": "sys_014",
+    "name": "Arcturus",
+    "type": "Red Giant",
+    "position": { "x": "30%", "y": "70%" },
+    "star_data": [
+      {
+        "name": "Arcturus",
+        "type": "Red Giant",
+        "heat": 4286,
+        "size": 25.4
+      }
+    ],
+    "planets": []
+  },
+  {
+    "id": "sys_015",
+    "name": "Helvetios",
+    "type": "Yellow Dwarf",
+    "position": { "x": "65%", "y": "58%" },
+    "star_data": [
+      {
+        "name": "Helvetios",
+        "type": "Yellow Dwarf",
+        "heat": 5870,
+        "size": 1.24
+      }
+    ],
+    "planets": [
+      {
+        "name": "Galileo",
+        "type": "Gas Giant",
+        "size": 13.2,
+        "materials": ["Hydrogen", "Helium"],
+        "fact": "Known for its violent, planet-wide storms."
+      }
+    ]
+  },
+  {
+    "id": "sys_016",
+    "name": "Xylos",
+    "type": "Orange Dwarf",
+    "position": { "x": "38%", "y": "62%" },
+    "star_data": [
+      {
+        "name": "Xylos",
+        "type": "Orange Dwarf",
+        "heat": 4500,
+        "size": 0.82
+      }
+    ],
+    "planets": [
+      {
+        "name": "Xylos-1",
+        "type": "Lava Planet",
+        "size": 0.88,
+        "materials": ["Molten Rock", "Sulfur", "Iron Oxide"],
+        "fact": "It rains glass sideways in winds of up to 5,000 mph."
+      },
+      {
+        "name": "Xylos-2",
+        "type": "Desert Planet",
+        "size": 1.12,
+        "materials": ["Silicon", "Iron", "Carbon Dioxide"],
+        "fact": "Covered in vast deserts of black sand and towering crystal formations."
+      }
+    ]
+  },
+  {
+    "id": "sys_017",
+    "name": "Zarmina",
+    "type": "White Dwarf",
+    "position": { "x": "88%", "y": "40%" },
+    "star_data": [
+      {
+        "name": "Zarmina",
+        "type": "White Dwarf",
+        "heat": 22000,
+        "size": 0.011
+      }
+    ],
+    "planets": []
+  },
+  {
+    "id": "sys_018",
+    "name": "Ophion's Maw",
+    "type": "Black Hole",
+    "position": { "x": "12%", "y": "22%" },
+    "star_data": [
+      {
+        "name": "Ophion",
+        "type": "Black Hole",
+        "heat": 0,
+        "size": 15.6
+      }
+    ],
+    "planets": []
+  },
+  {
+    "id": "sys_019",
+    "name": "Rigel",
+    "type": "Binary System",
+    "position": { "x": "75%", "y": "80%" },
+    "star_data": [
+      {
+        "name": "Rigel A",
+        "type": "Blue Star",
+        "heat": 12100,
+        "size": 78.9
+      },
+      {
+        "name": "Rigel B",
+        "type": "Blue Star",
+        "heat": 11500,
+        "size": 3.9
+      }
+    ],
+    "planets": []
+  },
+  {
+    "id": "sys_020",
+    "name": "Gliese 581",
+    "type": "Red Dwarf",
+    "position": { "x": "42%", "y": "48%" },
+    "star_data": [
+      {
+        "name": "Gliese 581",
+        "type": "Red Dwarf",
+        "heat": 3480,
+        "size": 0.29
+      }
+    ],
+    "planets": [
+      {
+        "name": "Gliese 581g",
+        "type": "Habitable Planet",
+        "size": 1.5,
+        "materials": ["Water", "Rock"],
+        "fact": "A tidally locked world with one side in perpetual day and the other in endless night."
+      },
+      {
+        "name": "Gliese 581d",
+        "type": "Ocean Planet",
+        "size": 2.2,
+        "materials": ["Water", "High-pressure Ice"],
+        "fact": "A massive ocean world with a crushing atmosphere."
+      }
+    ]
+  },
+  {
+    "id": "sys_021",
+    "name": "Epsilon Eridani",
+    "type": "Orange Dwarf",
+    "position": { "x": "58%", "y": "53%" },
+    "star_data": [
+      {
+        "name": "Epsilon Eridani",
+        "type": "Orange Dwarf",
+        "heat": 5084,
+        "size": 0.74
+      }
+    ],
+    "planets": [
+      {
+        "name": "AEgir",
+        "type": "Gas Giant",
+        "size": 10.5,
+        "materials": ["Hydrogen", "Helium", "Methane"],
+        "fact": "Named after a sea giant from Norse mythology."
+      }
+    ]
+  },
+  {
+    "id": "sys_022",
+    "name": "HD 189733",
+    "type": "Orange Dwarf",
+    "position": { "x": "35%", "y": "35%" },
+    "star_data": [
+      {
+        "name": "HD 189733 A",
+        "type": "Orange Dwarf",
+        "heat": 4980,
+        "size": 0.805
+      }
+    ],
+    "planets": [
+      {
+        "name": "HD 189733b",
+        "type": "Gas Giant",
+        "size": 12.8,
+        "materials": ["Silicate Particles", "Hydrogen"],
+        "fact": "A deep blue planet where it rains molten glass sideways at 7,000 km/h."
+      }
+    ]
+  },
+  {
+    "id": "sys_023",
+    "name": "Krios",
+    "type": "Yellow Dwarf",
+    "position": { "x": "63%", "y": "42%" },
+    "star_data": [
+      {
+        "name": "Krios",
+        "type": "Yellow Dwarf",
+        "heat": 5600,
+        "size": 0.98
+      }
+    ],
+    "planets": [
+      {
+        "name": "Krios Prime",
+        "type": "Desert Planet",
+        "size": 1.3,
+        "materials": ["Iron", "Nickel", "Sulfur"],
+        "fact": "Features two suns in the sky due to a close binary companion, resulting in no true night."
+      },
+      {
+        "name": "Krios Beta",
+        "type": "Terrestrial Planet",
+        "size": 0.8,
+        "materials": ["Silicon", "Oxygen"],
+        "fact": "Its thin atmosphere is rich in argon, giving the sky a violet hue."
+      }
+    ]
+  },
+  {
+    "id": "sys_024",
+    "name": "Ceti Alpha",
+    "type": "Binary System",
+    "position": { "x": "28%", "y": "58%" },
+    "star_data": [
+      {
+        "name": "Ceti Alpha A",
+        "type": "Yellow Dwarf",
+        "heat": 5790,
+        "size": 1.02
+      },
+      {
+        "name": "Ceti Alpha B",
+        "type": "Red Dwarf",
+        "heat": 3800,
+        "size": 0.55
+      }
+    ],
+    "planets": [
+      {
+        "name": "Ceti Alpha V",
+        "type": "Habitable Planet",
+        "size": 1.1,
+        "materials": ["Water", "Nitrogen", "Oxygen"],
+        "fact": "Its indigenous lifeforms are incredibly resilient to radiation."
+      }
+    ]
+  },
+  {
+    "id": "sys_025",
+    "name": "Polaris",
+    "type": "Hypergiant",
+    "position": { "x": "50%", "y": "5%" },
+    "star_data": [
+      {
+        "name": "Polaris",
+        "type": "Hypergiant",
+        "heat": 6015,
+        "size": 37.5
+      }
+    ],
+    "planets": []
+  },
+  {
+    "id": "sys_026",
+    "name": "Erebus",
+    "type": "Red Dwarf",
+    "position": { "x": "15%", "y": "85%" },
+    "star_data": [
+      {
+        "name": "Erebus",
+        "type": "Red Dwarf",
+        "heat": 3100,
+        "size": 0.33
+      }
+    ],
+    "planets": [
+      {
+        "name": "Styx",
+        "type": "Carbon Planet",
+        "size": 1.4,
+        "materials": ["Carbon", "Iron Carbide"],
+        "fact": "A dark world where light is almost completely absorbed by the surface."
+      },
+      {
+        "name": "Charon",
+        "type": "Ice Planet",
+        "size": 0.9,
+        "materials": ["Methane Ice", "Nitrogen Ice"],
+        "fact": "Covered in jagged spires of frozen nitrogen."
+      }
+    ]
+  },
+  {
+    "id": "sys_027",
+    "name": "Typhon's Reach",
+    "type": "Red Giant",
+    "position": { "x": "92%", "y": "65%" },
+    "star_data": [
+      {
+        "name": "Typhon",
+        "type": "Red Giant",
+        "heat": 3900,
+        "size": 32.1
+      }
+    ],
+    "planets": []
+  },
+  {
+    "id": "sys_028",
+    "name": "Corvus",
+    "type": "Blue Star",
+    "position": { "x": "22%", "y": "28%" },
+    "star_data": [
+      {
+        "name": "Corvus",
+        "type": "Blue Star",
+        "heat": 11000,
+        "size": 3.1
+      }
+    ],
+    "planets": [
+      {
+        "name": "Corvus Minor",
+        "type": "Gas Giant",
+        "size": 8.5,
+        "materials": ["Hydrogen", "Helium"],
+        "fact": "Its powerful magnetic field creates stunning, system-wide auroras."
+      }
+    ]
+  },
+  {
+    "id": "sys_029",
+    "name": "Helios VI",
+    "type": "Yellow Dwarf",
+    "position": { "x": "53%", "y": "63%" },
+    "star_data": [
+      {
+        "name": "Helios",
+        "type": "Yellow Dwarf",
+        "heat": 5900,
+        "size": 1.1
+      }
+    ],
+    "planets": [
+      {
+        "name": "Phaeton",
+        "type": "Lava Planet",
+        "size": 1.2,
+        "materials": ["Molten Silicates", "Magnesium Oxide"],
+        "fact": "Its surface is a constantly churning ocean of magma."
+      },
+      {
+        "name": "Icarus",
+        "type": "Desert Planet",
+        "size": 0.85,
+        "materials": ["Iron Oxide", "Sand"],
+        "fact": "Scoured by winds that carry abrasive, razor-sharp sand particles."
+      }
+    ]
+  },
+  {
+    "id": "sys_030",
+    "name": "Nyx",
+    "type": "White Dwarf",
+    "position": { "x": "78%", "y": "18%" },
+    "star_data": [
+      {
+        "name": "Nyx",
+        "type": "White Dwarf",
+        "heat": 27000,
+        "size": 0.009
+      }
+    ],
+    "planets": []
+  }
+]
