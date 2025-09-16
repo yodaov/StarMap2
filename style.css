@@ -1,0 +1,105 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- Lobby Styles --- */
+#galaxy-map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.star:hover {
+    transform: scale(1.8);
+    z-index: 1000;
+}
+
+/* Star Type Styles */
+.star.yellow-dwarf { background-color: #fffde7; width: 6px; height: 6px; box-shadow: 0 0 8px #fffde7; }
+.star.red-dwarf { background-color: #ffcdd2; width: 4px; height: 4px; box-shadow: 0 0 8px #ffcdd2; }
+.star.orange-dwarf { background-color: #ffcc80; width: 5px; height: 5px; box-shadow: 0 0 8px #ffcc80; }
+.star.blue-star { background-color: #bbdefb; width: 8px; height: 8px; box-shadow: 0 0 12px #bbdefb; }
+.star.red-giant { background-color: #ffab91; width: 12px; height: 12px; box-shadow: 0 0 16px #ffab91; }
+.star.red-supergiant { background-color: #ff7043; width: 16px; height: 16px; box-shadow: 0 0 20px #ff7043; }
+.star.hypergiant { background-color: #e0e0e0; width: 20px; height: 20px; box-shadow: 0 0 25px #e0e0e0; }
+.star.white-dwarf { background-color: #e3f2fd; width: 3px; height: 3px; box-shadow: 0 0 6px #e3f2fd; }
+.star.neutron-star { background-color: #d1c4e9; width: 2px; height: 2px; box-shadow: 0 0 10px #d1c4e9, 0 0 2px #fff inset; animation: pulse 1.5s infinite; }
+.star.black-hole, .star.binary-black-holes { background-color: #212121; width: 14px; height: 14px; box-shadow: 0 0 15px #f06292; border: 1px solid #f06292; }
+.star.binary-system { background-color: #fff9c4; width: 8px; height: 8px; box-shadow: 0 0 10px #fff9c4; }
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.5); box-shadow: 0 0 15px #d1c4e9, 0 0 4px #fff inset; }
+    100% { transform: scale(1); }
+}
+
+/* --- Tooltip Styles --- */
+#tooltip {
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #64ffda;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    pointer-events: none; /* Allows clicks to pass through to the star */
+    z-index: 1001;
+    white-space: pre-wrap;
+}
+
+/* --- System View Styles --- */
+.back-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #64ffda;
+    text-decoration: none;
+    z-index: 100;
+}
+#system-view {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.system-body {
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.system-body:hover { z-index: 100; }
+
+.orbit {
+    position: absolute;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+}
+
+.planet {
+    animation: orbit 30s linear infinite;
+}
+
+@keyframes orbit {
+    from { transform: rotate(0deg) translateX(var(--orbit-radius)) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(var(--orbit-radius)) rotate(-360deg); }
+}
