@@ -1,6 +1,44 @@
 document.addEventListener('DOMContentLoaded', () => {
     const systemView = document.getElementById('system-view');
     const tooltip = document.getElementById('tooltip');
+    // Persistent planet info panel (bottom-right)
+    const planetInfoPanel = document.createElement('div');
+    planetInfoPanel.id = 'planet-info-panel';
+    Object.assign(planetInfoPanel.style, {
+        position: 'fixed',
+        right: '16px',
+        bottom: '16px',
+        maxWidth: '360px',
+        backgroundColor: 'rgba(0, 0, 0, 0.85)',
+        border: '1px solid #64ffda',
+        color: '#fff',
+        padding: '12px',
+        borderRadius: '8px',
+        fontSize: '14px',
+        lineHeight: '1.35',
+        zIndex: '1002',
+        display: 'none',
+        pointerEvents: 'auto'
+    });
+    document.body.appendChild(planetInfoPanel);
+
+    function showPlanetPanel(html) {
+        planetInfoPanel.innerHTML = html;
+        planetInfoPanel.style.display = 'block';
+    }
+    function hidePlanetPanel() {
+        planetInfoPanel.style.display = 'none';
+    }
+    // Clicking outside closes the panel
+    document.addEventListener('click', (e) => {
+        // If click is not inside the panel, hide it
+        if (!planetInfoPanel.contains(e.target)) {
+            hidePlanetPanel();
+        }
+    });
+    // Prevent clicks inside the panel from bubbling up and closing it
+    planetInfoPanel.addEventListener('click', (e) => e.stopPropagation());
+
     
     // Get the system ID from the URL query parameter
     const params = new URLSearchParams(window.location.search);
@@ -76,7 +114,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 <br>Materials: ${planet.materials.join(', ')}
                 <br>Fact: ${planet.fact}
             `);
-            systemView.appendChild(planetElement);
+            
+            // Click to pin details at bottom-right
+            planetElement.addEventListener('click', (event) => {
+                event.stopPropagation();
+                tooltip.style.display = 'none';
+                showPlanetPanel(`
+                <strong>${planet.name} (${planet.type})</strong>
+                <br>Size: ${planet.size} Earth Radii
+                <br>Materials: ${planet.materials.join(', ')}
+                <br>Fact: ${planet.fact}
+            `);
+            });
+    systemView.appendChild(planetElement);
         });
     }
     
